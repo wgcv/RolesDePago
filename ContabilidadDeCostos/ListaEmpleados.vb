@@ -1,11 +1,8 @@
 ﻿Public Class ListaEmpleados
-    Public lista As List(Of Empleado)
-    Public Sub New()
-        lista = New List(Of Empleado)
+    Public Shared listadeEmpleados As List(Of Empleado) = New List(Of Empleado)
 
-    End Sub
-    Public Sub agregar(ByVal empleado As Empleado)
-        lista.Add(empleado)
+    Public Shared Sub agregar(ByVal empleado As Empleado)
+        listadeEmpleados.Add(empleado)
 
     End Sub
 End Class
