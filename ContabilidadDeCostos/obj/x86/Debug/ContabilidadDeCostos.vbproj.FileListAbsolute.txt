@@ -1,0 +1,11 @@
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\bin\Debug\ContabilidadDeCostos.exe
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\bin\Debug\ContabilidadDeCostos.pdb
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\bin\Debug\ContabilidadDeCostos.xml
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.MenuRol.resources
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.Resources.resources
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.vbproj.GenerateResource.Cache
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.exe
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.xml
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.pdb
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.Agregar.resources
+C:\Users\Gustavo\Documents\GitHub\ContabilidadDeCostos\ContabilidadDeCostos\obj\x86\Debug\ContabilidadDeCostos.Detalle.resources
