@@ -27,25 +27,25 @@ Partial Class Detalle
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtdecimo4 = New System.Windows.Forms.TextBox()
+        Me.txtVacaciones = New System.Windows.Forms.TextBox()
+        Me.txtDecimo3 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lblNombre = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -89,7 +89,6 @@ Partial Class Detalle
         '
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.GroupBox4)
-        Me.GroupBox2.Controls.Add(Me.btnGuardar)
         Me.GroupBox2.Controls.Add(Me.GroupBox3)
         Me.GroupBox2.Controls.Add(Me.lblNombre)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 90)
@@ -100,59 +99,23 @@ Partial Class Detalle
         Me.GroupBox2.Text = "Datos"
         Me.GroupBox2.Visible = False
         '
-        'btnGuardar
+        'Label6
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(497, 418)
-        Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
-        Me.btnGuardar.TabIndex = 2
-        Me.btnGuardar.Text = "Guardar"
-        Me.btnGuardar.UseVisualStyleBackColor = True
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.FlowLayoutPanel1)
-        Me.GroupBox3.Controls.Add(Me.Button1)
-        Me.GroupBox3.Location = New System.Drawing.Point(9, 56)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(470, 184)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Horas Extras"
-        '
-        'FlowLayoutPanel1
-        '
-        Me.FlowLayoutPanel1.AutoScroll = True
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(7, 19)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(448, 130)
-        Me.FlowLayoutPanel1.TabIndex = 5
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(330, 155)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(125, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Agregar Horas Extras"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'lblNombre
-        '
-        Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(6, 25)
-        Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(26, 13)
-        Me.lblNombre.TabIndex = 0
-        Me.lblNombre.Text = "N N"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(39, 418)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(50, 13)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "Mensaje "
+        Me.Label6.Visible = False
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.TextBox4)
+        Me.GroupBox4.Controls.Add(Me.txtTotal)
         Me.GroupBox4.Controls.Add(Me.Label4)
-        Me.GroupBox4.Controls.Add(Me.TextBox3)
-        Me.GroupBox4.Controls.Add(Me.TextBox2)
-        Me.GroupBox4.Controls.Add(Me.TextBox1)
+        Me.GroupBox4.Controls.Add(Me.txtdecimo4)
+        Me.GroupBox4.Controls.Add(Me.txtVacaciones)
+        Me.GroupBox4.Controls.Add(Me.txtDecimo3)
         Me.GroupBox4.Controls.Add(Me.Label5)
         Me.GroupBox4.Controls.Add(Me.Label3)
         Me.GroupBox4.Controls.Add(Me.Label2)
@@ -163,13 +126,13 @@ Partial Class Detalle
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Detalle"
         '
-        'TextBox4
+        'txtTotal
         '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(225, 96)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 18
+        Me.txtTotal.Enabled = False
+        Me.txtTotal.Location = New System.Drawing.Point(225, 96)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.Size = New System.Drawing.Size(100, 20)
+        Me.txtTotal.TabIndex = 18
         '
         'Label4
         '
@@ -180,29 +143,29 @@ Partial Class Detalle
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Total"
         '
-        'TextBox3
+        'txtdecimo4
         '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(225, 70)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 16
+        Me.txtdecimo4.Enabled = False
+        Me.txtdecimo4.Location = New System.Drawing.Point(225, 70)
+        Me.txtdecimo4.Name = "txtdecimo4"
+        Me.txtdecimo4.Size = New System.Drawing.Size(100, 20)
+        Me.txtdecimo4.TabIndex = 16
         '
-        'TextBox2
+        'txtVacaciones
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(225, 43)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 15
+        Me.txtVacaciones.Enabled = False
+        Me.txtVacaciones.Location = New System.Drawing.Point(225, 43)
+        Me.txtVacaciones.Name = "txtVacaciones"
+        Me.txtVacaciones.Size = New System.Drawing.Size(100, 20)
+        Me.txtVacaciones.TabIndex = 15
         '
-        'TextBox1
+        'txtDecimo3
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(225, 13)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 14
+        Me.txtDecimo3.Enabled = False
+        Me.txtDecimo3.Location = New System.Drawing.Point(225, 13)
+        Me.txtDecimo3.Name = "txtDecimo3"
+        Me.txtDecimo3.Size = New System.Drawing.Size(100, 20)
+        Me.txtDecimo3.TabIndex = 14
         '
         'Label5
         '
@@ -231,15 +194,52 @@ Partial Class Detalle
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Décimo Tercero"
         '
-        'Label6
+        'btnGuardar
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(39, 418)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 13)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Mensaje "
-        Me.Label6.Visible = False
+        Me.btnGuardar.Location = New System.Drawing.Point(380, 155)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGuardar.TabIndex = 2
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.FlowLayoutPanel1)
+        Me.GroupBox3.Controls.Add(Me.Button1)
+        Me.GroupBox3.Controls.Add(Me.btnGuardar)
+        Me.GroupBox3.Location = New System.Drawing.Point(9, 56)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(470, 184)
+        Me.GroupBox3.TabIndex = 1
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Horas Extras"
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.AutoScroll = True
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(7, 19)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(448, 130)
+        Me.FlowLayoutPanel1.TabIndex = 5
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(249, 155)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(125, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Agregar Horas Extras"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'lblNombre
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Location = New System.Drawing.Point(6, 25)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(26, 13)
+        Me.lblNombre.TabIndex = 0
+        Me.lblNombre.Text = "N N"
         '
         'Detalle
         '
@@ -254,9 +254,9 @@ Partial Class Detalle
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -271,11 +271,11 @@ Partial Class Detalle
     Friend WithEvents FlowLayoutPanel1 As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtTotal As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtdecimo4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtVacaciones As System.Windows.Forms.TextBox
+    Friend WithEvents txtDecimo3 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label

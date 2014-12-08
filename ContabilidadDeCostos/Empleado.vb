@@ -4,7 +4,7 @@
     Private cargo As String
     Private salario As Decimal
     Private fecha As Date
-    Private extras As List(Of extra)
+    Public extras As List(Of extra)
     Private descuentos As Decimal
 
 
@@ -25,16 +25,13 @@
 
 
         For Each item As extra In extras
-            valor += item.valor()
+            valor += item.valor(salario)
 
         Next
         Return valor
     End Function
-    Public Sub AgregarExtras(ByVal porcentaje As Decimal, horas As Decimal)
-        Dim HoraExtra As extra
-        HoraExtra = New extra(porcentaje, horas)
-        extras.Add(HoraExtra)
-
+    Public Sub AgregarExtras(ByVal lista As List(Of extra))
+        Me.extras = lista
     End Sub
     Public Function SuedloConExtras() As Decimal
         Return (salario + ValorExtras())
@@ -61,15 +58,15 @@
 
     End Function
     Public Class extra
-        Dim porcentaje As Decimal
-        Dim horas As Decimal
+        Public porcentaje As Decimal
+        Public horas As Decimal
         Public Sub New(ByVal porcentaje As Decimal, horas As Decimal)
             Me.horas = horas
             Me.porcentaje = porcentaje
 
         End Sub
-        Public Function valor() As Decimal
-            Return (porcentaje * horas)
+        Public Function valor(ByVal salario) As Decimal
+            Return ((porcentaje * (salario / 167.33)) * horas)
         End Function
 
     End Class
