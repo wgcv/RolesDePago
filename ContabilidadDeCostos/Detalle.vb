@@ -60,6 +60,10 @@ Public Class Detalle
             txtVacaciones.Text = (empleado.getSuedloConExtras / 12) / 2
             txtdecimo4.Text = "28,33"
             txtTotal.Text = Convert.ToDecimal(txtDecimo3.Text) + Convert.ToDecimal(txtVacaciones.Text) + Convert.ToDecimal(txtdecimo4.Text)
+            d3.Text = (empleado.getSuedloConExtras / 12) * Month(Now)
+            va.Text = ((empleado.getSuedloConExtras / 12) / 2) * Month(Now)
+            d4.Text = Convert.ToDecimal(28.33 * Month(Now))
+            t.Text = Convert.ToDecimal(d3.Text) + Convert.ToDecimal(va.Text) + Convert.ToDecimal(d4.Text)
 
             For Each item As extra In empleado.extras
                 Dim panel As FlowLayoutPanel = New FlowLayoutPanel()
@@ -113,6 +117,10 @@ Public Class Detalle
     End Sub
 
     Private Sub GroupBox1_Enter(sender As System.Object, e As System.EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub GroupBox4_Enter(sender As System.Object, e As System.EventArgs) Handles GroupBox4.Enter
 
     End Sub
 End Class

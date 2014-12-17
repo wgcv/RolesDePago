@@ -45,11 +45,21 @@ Partial Class Detalle
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.lblNombre = New System.Windows.Forms.Label()
+        Me.t = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.d4 = New System.Windows.Forms.TextBox()
+        Me.va = New System.Windows.Forms.TextBox()
+        Me.d3 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -97,7 +107,7 @@ Partial Class Detalle
         Me.GroupBox2.Controls.Add(Me.lblNombre)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 90)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(578, 447)
+        Me.GroupBox2.Size = New System.Drawing.Size(578, 463)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos"
@@ -142,6 +152,7 @@ Partial Class Detalle
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.GroupBox6)
         Me.GroupBox4.Controls.Add(Me.txtTotal)
         Me.GroupBox4.Controls.Add(Me.Label4)
         Me.GroupBox4.Controls.Add(Me.txtdecimo4)
@@ -152,7 +163,7 @@ Partial Class Detalle
         Me.GroupBox4.Controls.Add(Me.Label2)
         Me.GroupBox4.Location = New System.Drawing.Point(9, 304)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(472, 128)
+        Me.GroupBox4.Size = New System.Drawing.Size(472, 159)
         Me.GroupBox4.TabIndex = 3
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Detalle"
@@ -160,7 +171,7 @@ Partial Class Detalle
         'txtTotal
         '
         Me.txtTotal.Enabled = False
-        Me.txtTotal.Location = New System.Drawing.Point(225, 96)
+        Me.txtTotal.Location = New System.Drawing.Point(111, 102)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.Size = New System.Drawing.Size(100, 20)
         Me.txtTotal.TabIndex = 18
@@ -168,7 +179,7 @@ Partial Class Detalle
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(128, 96)
+        Me.Label4.Location = New System.Drawing.Point(14, 102)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(31, 13)
         Me.Label4.TabIndex = 17
@@ -177,7 +188,7 @@ Partial Class Detalle
         'txtdecimo4
         '
         Me.txtdecimo4.Enabled = False
-        Me.txtdecimo4.Location = New System.Drawing.Point(225, 70)
+        Me.txtdecimo4.Location = New System.Drawing.Point(111, 76)
         Me.txtdecimo4.Name = "txtdecimo4"
         Me.txtdecimo4.Size = New System.Drawing.Size(100, 20)
         Me.txtdecimo4.TabIndex = 16
@@ -185,7 +196,7 @@ Partial Class Detalle
         'txtVacaciones
         '
         Me.txtVacaciones.Enabled = False
-        Me.txtVacaciones.Location = New System.Drawing.Point(225, 43)
+        Me.txtVacaciones.Location = New System.Drawing.Point(111, 49)
         Me.txtVacaciones.Name = "txtVacaciones"
         Me.txtVacaciones.Size = New System.Drawing.Size(100, 20)
         Me.txtVacaciones.TabIndex = 15
@@ -193,7 +204,7 @@ Partial Class Detalle
         'txtDecimo3
         '
         Me.txtDecimo3.Enabled = False
-        Me.txtDecimo3.Location = New System.Drawing.Point(225, 13)
+        Me.txtDecimo3.Location = New System.Drawing.Point(111, 19)
         Me.txtDecimo3.Name = "txtDecimo3"
         Me.txtDecimo3.Size = New System.Drawing.Size(100, 20)
         Me.txtDecimo3.TabIndex = 14
@@ -201,7 +212,7 @@ Partial Class Detalle
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(128, 70)
+        Me.Label5.Location = New System.Drawing.Point(14, 76)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(77, 13)
         Me.Label5.TabIndex = 13
@@ -210,7 +221,7 @@ Partial Class Detalle
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(128, 46)
+        Me.Label3.Location = New System.Drawing.Point(14, 52)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 13)
         Me.Label3.TabIndex = 12
@@ -219,7 +230,7 @@ Partial Class Detalle
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(128, 16)
+        Me.Label2.Location = New System.Drawing.Point(14, 22)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(83, 13)
         Me.Label2.TabIndex = 11
@@ -272,11 +283,96 @@ Partial Class Detalle
         Me.lblNombre.TabIndex = 0
         Me.lblNombre.Text = "N N"
         '
+        't
+        '
+        Me.t.Enabled = False
+        Me.t.Location = New System.Drawing.Point(122, 100)
+        Me.t.Name = "t"
+        Me.t.Size = New System.Drawing.Size(100, 20)
+        Me.t.TabIndex = 26
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(25, 100)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(31, 13)
+        Me.Label7.TabIndex = 25
+        Me.Label7.Text = "Total"
+        '
+        'd4
+        '
+        Me.d4.Enabled = False
+        Me.d4.Location = New System.Drawing.Point(122, 74)
+        Me.d4.Name = "d4"
+        Me.d4.Size = New System.Drawing.Size(100, 20)
+        Me.d4.TabIndex = 24
+        '
+        'va
+        '
+        Me.va.Enabled = False
+        Me.va.Location = New System.Drawing.Point(122, 43)
+        Me.va.Name = "va"
+        Me.va.Size = New System.Drawing.Size(100, 20)
+        Me.va.TabIndex = 23
+        '
+        'd3
+        '
+        Me.d3.Enabled = False
+        Me.d3.Location = New System.Drawing.Point(122, 17)
+        Me.d3.Name = "d3"
+        Me.d3.Size = New System.Drawing.Size(100, 20)
+        Me.d3.TabIndex = 22
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(25, 74)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(77, 13)
+        Me.Label8.TabIndex = 21
+        Me.Label8.Text = "Décimo Cuarto"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(25, 50)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(63, 13)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "Vacaciones"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(25, 20)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(83, 13)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "Décimo Tercero"
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.Label10)
+        Me.GroupBox6.Controls.Add(Me.t)
+        Me.GroupBox6.Controls.Add(Me.Label9)
+        Me.GroupBox6.Controls.Add(Me.Label7)
+        Me.GroupBox6.Controls.Add(Me.Label8)
+        Me.GroupBox6.Controls.Add(Me.d4)
+        Me.GroupBox6.Controls.Add(Me.d3)
+        Me.GroupBox6.Controls.Add(Me.va)
+        Me.GroupBox6.Location = New System.Drawing.Point(225, 15)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(236, 138)
+        Me.GroupBox6.TabIndex = 27
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Total"
+        '
         'Detalle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(602, 549)
+        Me.ClientSize = New System.Drawing.Size(602, 565)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Detalle"
@@ -290,6 +386,8 @@ Partial Class Detalle
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -316,4 +414,13 @@ Partial Class Detalle
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents t As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents d4 As System.Windows.Forms.TextBox
+    Friend WithEvents va As System.Windows.Forms.TextBox
+    Friend WithEvents d3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
 End Class

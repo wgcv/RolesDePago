@@ -75,6 +75,7 @@
         End Function
 
     End Class
+ 
     Public ReadOnly Property getNombre() As String
         Get
             Return nombre
