@@ -103,4 +103,16 @@ Public Class Detalle
         Next
         empleado.AgregarExtras(extras)
     End Sub
+
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+        Dim desc As Decimal
+        If (Decimal.TryParse(TextBox1.Text, desc)) Then
+            empleado.descuento(desc)
+        End If
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As System.Object, e As System.EventArgs) Handles GroupBox1.Enter
+
+    End Sub
 End Class

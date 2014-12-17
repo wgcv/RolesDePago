@@ -23,6 +23,9 @@ Partial Class Agregar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.lblId = New System.Windows.Forms.Label()
         Me.lblMensaje = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
@@ -33,9 +36,6 @@ Partial Class Agregar
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtId = New System.Windows.Forms.TextBox()
-        Me.lblId = New System.Windows.Forms.Label()
-        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,6 +61,31 @@ Partial Class Agregar
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Agregar Empleado"
         '
+        'btnCerrar
+        '
+        Me.btnCerrar.Location = New System.Drawing.Point(252, 189)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCerrar.TabIndex = 8
+        Me.btnCerrar.Text = "Cerrar"
+        Me.btnCerrar.UseVisualStyleBackColor = True
+        '
+        'txtId
+        '
+        Me.txtId.Location = New System.Drawing.Point(112, 22)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(200, 20)
+        Me.txtId.TabIndex = 1
+        '
+        'lblId
+        '
+        Me.lblId.AutoSize = True
+        Me.lblId.Location = New System.Drawing.Point(9, 22)
+        Me.lblId.Name = "lblId"
+        Me.lblId.Size = New System.Drawing.Size(70, 13)
+        Me.lblId.TabIndex = 10
+        Me.lblId.Text = "Identificación"
+        '
         'lblMensaje
         '
         Me.lblMensaje.AutoSize = True
@@ -81,7 +106,7 @@ Partial Class Agregar
         '
         'dtpFecha
         '
-        Me.dtpFecha.Location = New System.Drawing.Point(73, 126)
+        Me.dtpFecha.Location = New System.Drawing.Point(112, 126)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(200, 20)
         Me.dtpFecha.TabIndex = 6
@@ -97,21 +122,21 @@ Partial Class Agregar
         '
         'TxtSalario
         '
-        Me.TxtSalario.Location = New System.Drawing.Point(73, 100)
+        Me.TxtSalario.Location = New System.Drawing.Point(112, 100)
         Me.TxtSalario.Name = "TxtSalario"
         Me.TxtSalario.Size = New System.Drawing.Size(200, 20)
         Me.TxtSalario.TabIndex = 5
         '
         'TxtCargo
         '
-        Me.TxtCargo.Location = New System.Drawing.Point(73, 74)
+        Me.TxtCargo.Location = New System.Drawing.Point(112, 74)
         Me.TxtCargo.Name = "TxtCargo"
         Me.TxtCargo.Size = New System.Drawing.Size(200, 20)
         Me.TxtCargo.TabIndex = 4
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(73, 48)
+        Me.txtNombre.Location = New System.Drawing.Point(112, 48)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(200, 20)
         Me.txtNombre.TabIndex = 3
@@ -142,31 +167,6 @@ Partial Class Agregar
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Nombre"
-        '
-        'txtId
-        '
-        Me.txtId.Location = New System.Drawing.Point(73, 22)
-        Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(200, 20)
-        Me.txtId.TabIndex = 1
-        '
-        'lblId
-        '
-        Me.lblId.AutoSize = True
-        Me.lblId.Location = New System.Drawing.Point(9, 22)
-        Me.lblId.Name = "lblId"
-        Me.lblId.Size = New System.Drawing.Size(70, 13)
-        Me.lblId.TabIndex = 10
-        Me.lblId.Text = "Identificación"
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.Location = New System.Drawing.Point(252, 189)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCerrar.TabIndex = 8
-        Me.btnCerrar.Text = "Cerrar"
-        Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'Agregar
         '

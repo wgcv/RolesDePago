@@ -1,4 +1,4 @@
-﻿Public Class Empleado
+﻿<Serializable()> Public Class Empleado
     Private id As String
     Private nombre As String
     Private cargo As String
@@ -57,7 +57,11 @@
 
 
     End Function
-    Public Class extra
+    Public Sub descuento(ByVal desc As Decimal)
+        Me.descuentos = desc
+
+    End Sub
+    <Serializable()> Public Class extra
         Public porcentaje As Decimal
         Public horas As Decimal
         Public Sub New(ByVal porcentaje As Decimal, horas As Decimal)
@@ -65,6 +69,7 @@
             Me.porcentaje = porcentaje
 
         End Sub
+
         Public Function valor(ByVal salario) As Decimal
             Return ((porcentaje * (salario / 167.33)) * horas)
         End Function

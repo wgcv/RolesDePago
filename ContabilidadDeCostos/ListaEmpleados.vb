@@ -1,4 +1,4 @@
-﻿Public Class ListaEmpleados
+﻿<Serializable()> Public Class ListaEmpleados
     Public Shared listadeEmpleados As List(Of Empleado) = New List(Of Empleado)
 
     Public Shared Sub agregar(ByVal empleado As Empleado)
